@@ -1,0 +1,113 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  line-height: inherit;
+  background-color:rgb(23 23 23);
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.container {
+  max-width: auto;
+  margin: 50px auto;
+  padding: 80px;
+  background-color:rgb(23 23 23);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+.form-group {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 80%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+h3 {
+  text-align: center;
+}
+.categories {
+  display: flex;
+}
+.category {
+  cursor: pointer;
+}
+.category:hover {
+  text-decoration: underline;
+}
+button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 0.5em;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#result {
+  margin-top: 20px;
+}
+/* Стили для изображения */
+.image-container {
+  text-align: center;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+.image-container:hover {
+  background-color: #ccc;
+}
+.image-container img {
+  max-width: 200px;
+  height: 300px;
+
+}
+
+/* Сетка изображений: 3 изображения в одном ряду */
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Центровка изображений по горизонтали */
+}
+
+.image-grid .image-container {
+  max-width: 200px;
+  box-sizing: border-box;
+  padding-right: 10px;
+}
+/* Стили для строки запасной части */
+
+
+.spare-part {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.spare-part span {
+  width: 30%;
+  word-wrap: break-word;
+}
+.unit-image {
+  display: flex;
+  justify-content: center;
+}
+.unit-image img {
+  max-width: 50%;
+  max-height: 800px;
+}
