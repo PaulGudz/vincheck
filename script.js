@@ -1,6 +1,6 @@
 
 //const proxyUrl = 'http://localhost:3000/'
- const proxyUrl = 'https://cors-anywhere.herokuapp.com/'
+ const proxyUrl = 'https://proxy.cors.sh/'
 
 async function findParts() {
   const vin = document.getElementById('vinInput').value;
@@ -18,6 +18,7 @@ async function findParts() {
     
     const response = await fetch(proxyUrl + targetUrl, {
         headers: {
+            'x-cors-api-key': 'temp_31313ff9ce6738a80ecdc159a70d05c0',
             'Origin': 'http://127.0.0.1:5500'
         }
     });
@@ -51,6 +52,7 @@ async function findParts() {
 
             const secondResponse = await fetch(proxyUrl + targetUrl2, {
                 headers: {
+                    'x-cors-api-key': 'temp_31313ff9ce6738a80ecdc159a70d05c0',
                     'Origin': 'http://127.0.0.1:5500'
                 }
             });
@@ -99,6 +101,7 @@ async function findParts() {
 
         const thirdResponse = await fetch(proxyUrl + targetUrl3, {
           headers: {
+            'x-cors-api-key': 'temp_31313ff9ce6738a80ecdc159a70d05c0',
               'Origin': 'http://127.0.0.1:5500'
           }
         });
@@ -144,6 +147,7 @@ async function findParts() {
       const fourthResponse = await fetch(proxyUrl + targetUrl4, {
         method: 'POST',
         headers: {
+            'x-cors-api-key': 'temp_31313ff9ce6738a80ecdc159a70d05c0',
             'Accept': 'application/json',
             'Content-Type': 'application/json',
             'Origin': 'http://127.0.0.1:5500'
